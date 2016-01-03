@@ -1,0 +1,39 @@
+{
+	"version":"Alpha 1.0.1",
+	"model":"murakumo.moc",
+	"textures":[
+		"murakumo.1024/texture_00.png"
+	],
+    "physics":"murakumo.physics.json",
+    "layout":
+	{
+		"center_x":0,
+		"y": 0.6,
+		"width":2.4
+	},
+	"hit_areas":
+	[
+		{"name":"head", "id":"D_REF.HEAD"},
+		{"name":"body", "id":"D_REF.BODY"}
+	],
+    "expressions":
+	[
+	 {"name":"f01","file":"expressions/f01.exp.json"},
+	 {"name":"f02","file":"expressions/f02.exp.json"},
+	 {"name":"f03","file":"expressions/f03.exp.json"}
+	],
+	"motions":{
+		"tap_body":[
+			{"file":"motions/murakumo_tap_bust_01.mtn"},
+			{"file":"motions/murakumo_tap_bust_02.mtn"},
+            {"file":"motions/murakumo_tap_ear_01.mtn"},
+            {"file":"motions/murakumo_m_01.mtn"},
+			{"file":"motions/murakumo_m_02.mtn"}
+		],
+		"idle":[
+			{"file":"motions/murakumo_idle_01.mtn","fade_in":2000, "fade_out":2000},
+			{"file":"motions/murakumo_idle_02.mtn","fade_in":2000, "fade_out":2000},
+			{"file":"motions/murakumo_idle_03.mtn","fade_in":2000, "fade_out":2000}
+		]
+	}
+}

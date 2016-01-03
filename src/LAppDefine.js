@@ -35,6 +35,7 @@ var LAppDefine = {
     MODEL_NEP : "assets/live2d/neptune/neptune_classic.json",
     MODEL_NOIR : "assets/live2d/noir/noir_classic.json",
     MODEL_MURAKUMO : "assets/live2d/murakumo/murakumo.model.json",
+    MODEL_MIKU : "assets/live2d/miku/miku.model.json",
     
     
     MOTION_GROUP_IDLE : "idle", 
