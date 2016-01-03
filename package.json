@@ -1,0 +1,19 @@
+{
+    "name": "Live2D",
+    "version": "0.0.1",
+    "main": "index.html",
+    "window": {
+        "toolbar": false,
+        "frame": false,
+        "transparent": true,
+        "resizable":false,
+        "width":490,
+        "height":730,
+        "show_in_taskbar": false,
+        "always-on-top": false
+    },
+    "chromium-args": "--child-clean-exit --enable-webgl --ignore-gpu-blacklist --disable-pinch",
+    "webkit": {
+        "plugin": true
+    }
+}
