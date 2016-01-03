@@ -14,5 +14,5 @@
 
 ### Install (Mac OS):
 1. rename the root directory to `app.nw`
-2. put it inside `node-webkit.app/Contents/Resources/`
-3. run `node-webkit.app`
+2. put it inside `nwjs.app/Contents/Resources/`
+3. run `nwjs.app`
