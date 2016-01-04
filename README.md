@@ -1,6 +1,9 @@
 ## Live2D-Widget
 a little cross-platform desktop widget based on the Live2D Sample App in the SDK
 
+[nw.js](https://github.com/nwjs/nw.js) builds are avaliable on [http://nwjs.io/](http://nwjs.io/)
+I have tested all 3 platforms on nw.js version 0.12.x
+
 ### Usage:
 * adjust window size in package.json
 * drag using invisible handle at top of window
