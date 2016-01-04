@@ -1,4 +1,5 @@
 ## Live2D-Widget
+a little cross-platform desktop widget based on the Live2D Sample App in the SDK
 
 ### Usage:
 * adjust window size in package.json
@@ -29,5 +30,7 @@
 
 ### Issues/Todo:
 * sound doesn't work in nw.js
+* transparency in linux doesn't work unless GPU is disabled but WebGL requires GPU
+* transparency in Mac OS will show a visible title string
 * presist window position between sessions
 * automatically scan for models inside assets
