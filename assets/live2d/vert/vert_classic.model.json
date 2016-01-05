@@ -1,13 +1,15 @@
 {
 	"version":"Sample 1.0.0",
-	"model":"neptune_classic.moc",
+	"model":"vert_classic.moc",
 	"textures":[
-        "neptune_classic.1024/texture_00.png",
-        "neptune_classic.1024/texture_01.png",
-        "neptune_classic.1024/texture_02.png"
-    ],
-    "layout": {"center_x":0, "y":1.0, "width":2.9},
-    "hit_areas": [{"name":"body", "id":"D_BODY.00"}],
+		"vert_classic.1024/texture_00.png",
+		"vert_classic.1024/texture_01.png",
+		"vert_classic.1024/texture_02.png",
+		"vert_classic.1024/texture_03.png"
+	],
+	"physics":"vert_classic.physics.json",
+	"layout": {"center_x":0, "y":1.0, "width":2.9},
+    "hit_areas": [{"name":"body", "id":"D_REF.PT_HEAD"}],
     "motions":{
         "idle":[
             {"file":"motions/idle_00.mtn" ,"fade_in":2000, "fade_out":2000},

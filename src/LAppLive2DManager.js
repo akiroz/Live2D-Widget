@@ -33,36 +33,50 @@ LAppLive2DManager.prototype.changeModel = function(gl)
     {
         
         this.reloadFlg = false;
-        var no = parseInt(this.count % 5);
+        var no = parseInt(this.count % 10);
 
         var thisRef = this;
         switch (no)
         {
             case 0: 
-                this.releaseModel(1, gl);
-                this.releaseModel(0, gl);
-                this.createModel();
+                this.releaseModel(0, gl); this.createModel();
                 this.models[0].load(gl, LAppDefine.MODEL_HARU);
                 break;
             case 1: 
-                this.releaseModel(0, gl);
-                this.createModel();
-                this.models[0].load(gl, LAppDefine.MODEL_BLANC);
+                this.releaseModel(0, gl); this.createModel();
+                this.models[0].load(gl, LAppDefine.MODEL_EPSILON);
                 break;
             case 2: 
-                this.releaseModel(0, gl);
-                this.createModel();
-                this.models[0].load(gl, LAppDefine.MODEL_NEP);            
+                this.releaseModel(0, gl); this.createModel();
+                this.models[0].load(gl, LAppDefine.MODEL_NEP);
                 break;
             case 3: 
-                this.releaseModel(0, gl);
-                this.createModel();
-                this.models[0].load(gl, LAppDefine.MODEL_NOIR);            
+                this.releaseModel(0, gl); this.createModel();
+                this.models[0].load(gl, LAppDefine.MODEL_NOIR);
                 break;
             case 4: 
-                this.releaseModel(0, gl);
-                this.createModel();
-                this.models[0].load(gl, LAppDefine.MODEL_MURAKUMO);            
+                this.releaseModel(0, gl); this.createModel();
+                this.models[0].load(gl, LAppDefine.MODEL_BLANC);
+                break;
+            case 5: 
+                this.releaseModel(0, gl); this.createModel();
+                this.models[0].load(gl, LAppDefine.MODEL_VERT);
+                break;
+            case 6: 
+                this.releaseModel(0, gl); this.createModel();
+                this.models[0].load(gl, LAppDefine.MODEL_MURAKUMO);
+                break;
+            case 7: 
+                this.releaseModel(0, gl); this.createModel();
+                this.models[0].load(gl, LAppDefine.MODEL_BISMARCK);
+                break;
+            case 8: 
+                this.releaseModel(0, gl); this.createModel();
+                this.models[0].load(gl, LAppDefine.MODEL_HIBIKI);
+                break;
+            case 9: 
+                this.releaseModel(0, gl); this.createModel();
+                this.models[0].load(gl, LAppDefine.MODEL_HARUNA);
                 break;
             default:
                 break;

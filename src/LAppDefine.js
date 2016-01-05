@@ -31,11 +31,17 @@ var LAppDefine = {
 
     
     MODEL_HARU : "assets/live2d/haru/haru.model.json",
-    MODEL_BLANC : "assets/live2d/blanc/blanc_classic.model.json",
+    MODEL_EPSILON : "assets/live2d/Epsilon/Epsilon.model.json",
+    
     MODEL_NEP : "assets/live2d/neptune/neptune_classic.json",
     MODEL_NOIR : "assets/live2d/noir/noir_classic.json",
+    MODEL_BLANC : "assets/live2d/blanc/blanc_classic.model.json",
+    MODEL_VERT : "assets/live2d/vert/vert_classic.model.json",
+    
     MODEL_MURAKUMO : "assets/live2d/murakumo/murakumo.model.json",
-    MODEL_MIKU : "assets/live2d/miku/miku.model.json",
+    MODEL_BISMARCK : "assets/live2d/bismarck/bismarck.model.json",
+    MODEL_HIBIKI : "assets/live2d/hibiki/kankorehibiki.model.json",
+    MODEL_HARUNA : "assets/live2d/haruna/kankoreharuna.model.json",
     
     
     MOTION_GROUP_IDLE : "idle", 
