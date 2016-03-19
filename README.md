@@ -1,4 +1,11 @@
-## Live2D-Widget
+## BETTER Live2D-Widget updated 20 march 2016 
+(original from akiroz)
+## WHATS NEW ?
+* sound worked for haru (only tested on first model of this app)
+* context menu (exit button added)
+
+
+--------------------------------------------------------------------------------------------
 a little cross-platform desktop widget based on the Live2D Sample App in the SDK
 
 [nw.js](https://github.com/nwjs/nw.js) builds are avaliable on [http://nwjs.io/](http://nwjs.io/)
@@ -8,11 +15,11 @@ I have tested all 3 platforms on nw.js version 0.12.x
 
 ### Usage:
 * adjust window size in package.json
-* drag using invisible handle at top of window
+* in this version the app will automatically to the bottom right (tested only 1080p)
 * move: look
 * scroll: zoom
 * l-click: touch
-* r-click: cycle models
+* r-click: context menu - change models, always on top, and exit
 
 ### Install (Windows/Linux):
 1. extract the right nw.js package to the root directory
@@ -37,7 +44,6 @@ I have tested all 3 platforms on nw.js version 0.12.x
 7. edit `src/LAppLive2DManager.js` (around line 40), add/remove cases for your model(s)
 
 ### Issues/Todo:
-* sound doesn't work in nw.js
 * transparency in linux doesn't work unless GPU is disabled but WebGL requires GPU
 * transparency in Mac OS will show a visible title string
 * presist window position between sessions
