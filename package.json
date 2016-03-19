@@ -6,10 +6,10 @@
         "toolbar": false,
         "frame": false,
         "transparent": true,
-        "resizable":false,
+        "resizable":true,
         "width":490,
         "height":730,
-        "show_in_taskbar": false,
+        "show_in_taskbar": true,
         "always-on-top": false
     }
 }

@@ -2,33 +2,17 @@
 <html>
     <head>
         <meta charset="UTF-8">
-            <title>Live2D SampleApp</title>
+            <title>Live2D Desktop Widget</title>
         </meta>
         
         <meta name="viewport" content="width=device-width, initial-scale=0.5, minimum-scale=1.0, maximum-scale=4.0">
         </meta>
 
         <style>
-/*
-            html, body {
-                oveflow: hidden;
-                height: 100%;
-            }
-            
-            #glcanvas {
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%, -50%);
-                background-size: 150%;
-                background-position: 50% 50%;
-                background-image: url(assets/image/back_class_normal.png);
-            }
-*/
             body{
                 margin: 0px;
                 padding: 0px;
-                background: rgba(0,0,0,0);
+                background-color:rgba(0,0,0,0);
                 overflow:hidden;
             }
             
@@ -43,6 +27,7 @@
                 font-family: Arial, Helvetica, sans-serif;
                 font-size: 14px;
                 color: #ffffff;
+				margin-left: 10px;
                 padding: 10px 20px;
                 -moz-border-radius: 30px;
                 -webkit-border-radius: 30px;
@@ -97,13 +82,12 @@
     </head>
 
     <body onload="sampleApp1()">
-        
-        <p style="display:none">
-            <button id="btnChange" class="active">Change Model</button>
-        </p>
+        <!--
+		<button id="btnChange" class="active">Exit</button>
         
         <div id="handle"></div>
-        <canvas id="glcanvas" width="490" height="720" style=""></canvas>
+		-->
+        <canvas id="glcanvas" width="490" height="710" style=""></canvas>
         
         <div id="myconsole" style="color:#000; display:none;">---- Log ----</div>
 
@@ -119,6 +103,5 @@
         <script src="src/LAppModel.js"></script>
         <script src="src/LAppLive2DManager.js"></script>
         <script src="src/SampleApp1.js"></script>
-
     </body>
 </html>
