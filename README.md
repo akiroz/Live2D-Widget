@@ -36,7 +36,7 @@ Tested on all 3 platforms with nw.js version 0.12.x
 3. (add only) optionally implement the `tap_body` motion with proper `hit_areas` defined
 4. (add only) if the model doesn't fit properly inside your window, add/edit the `layout` section inside `*.model.json`
 
-   (see `assets/live2d/haru/haru.model.json` for reference)
+   (see `assets/haru/haru.model.json` for reference)
 
 ### Troubleshooting
 * Gettiing audio to work: 2 possible solutions.
