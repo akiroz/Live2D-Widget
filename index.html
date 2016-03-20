@@ -2,12 +2,8 @@
 <html>
     <head>
         <meta charset="UTF-8">
-            <title>Live2D Desktop Widget</title>
-        </meta>
-        
         <meta name="viewport" content="width=device-width, initial-scale=0.5, minimum-scale=1.0, maximum-scale=4.0">
-        </meta>
-
+        <title>Live2D Desktop Widget</title>
         <style>
             body{
                 margin: 0px;
@@ -15,23 +11,23 @@
                 background-color:rgba(0,0,0,0);
                 overflow:hidden;
             }
-            
+
             #handle {
                 -webkit-app-region: drag;
                 height:15px;
                 width:100%;
             }
-			
-	#glcanvas {
-        	cursor:pointer;
-        	cursor:hand;
-	}
-             
+
+            #glcanvas {
+                cursor:pointer;
+                cursor:hand;
+            }
+
             button {
                 font-family: Arial, Helvetica, sans-serif;
                 font-size: 14px;
                 color: #ffffff;
-				margin-left: 10px;
+                margin-left: 10px;
                 padding: 10px 20px;
                 -moz-border-radius: 30px;
                 -webkit-border-radius: 30px;
@@ -65,7 +61,7 @@
                     to(#2980b9));
                 border: 1px solid #2980b9;
             }
-            
+
             button.inactive {
                 background: linear-gradient(
                     to bottom, 
@@ -87,12 +83,12 @@
 
     <body onload="sampleApp1()">
         <!--
-		<button id="btnChange" class="active">Exit</button>
+            <button id="btnChange" class="active">Exit</button>
         -->
         <div id="handle"></div>
-		
+
         <canvas id="glcanvas" width="490" height="710" style=""></canvas>
-        
+
         <div id="myconsole" style="color:#000; display:none;">---- Log ----</div>
 
         <!-- Live2D Library -->

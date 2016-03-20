@@ -12,5 +12,8 @@
         "height":730,
         "show_in_taskbar": false,
         "always-on-top": false
+    },
+    "dependencies": {
+    	"glob": "^7.0.0"
     }
 }

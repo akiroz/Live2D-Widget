@@ -7,9 +7,9 @@ Tested on all 3 platforms with nw.js version 0.12.x
 ![](https://raw.githubusercontent.com/akiroz/Live2D-Widget/master/screenshot.png)
 
 ## UPDATE March 20th, 2016
-* sound worked for haru (only tested on first model of this app)
 * context menu (exit button added)
 * preserve window state and position
+* auto-load models (scans for *.model.json)
 
 ### Usage:
 * adjust window size in package.json
@@ -30,15 +30,12 @@ Tested on all 3 platforms with nw.js version 0.12.x
 4. run `nwjs.app`
 
 ### Add/Remove Models:
-1. put/delete model folder inside `assets/live2d/`
+1. put/delete model folder inside `assets/`
 2. (add only) inspect your `*.model.json`, make sure it implements the `idle` motion
 3. (add only) optionally implement the `tap_body` motion with proper `hit_areas` defined
 4. (add only) if the model doesn't fit properly inside your window, add/edit the `layout` section inside `*.model.json`
 
    (see `assets/live2d/haru/haru.model.json` for reference)
-5. edit `src/LAppDefine.js` (around line 33), define/remove your `*.model.json` path(s)
-6. edit `src/LAppLive2DManager.js` (around line 36), change the modulo to the number of model(s)
-7. edit `src/LAppLive2DManager.js` (around line 40), add/remove cases for your model(s)
 
 ### Troubleshooting
 * Gettiing audio to work: 2 possible solutions.
@@ -48,4 +45,3 @@ Tested on all 3 platforms with nw.js version 0.12.x
 ### Issues/Todo:
 * transparency in linux doesn't work unless GPU is disabled but WebGL requires GPU
 * transparency in Mac OS will show a visible title string
-* automatically scan for models inside assets
