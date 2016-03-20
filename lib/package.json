@@ -4,7 +4,7 @@
     "main": "index.html",
     "window": {
 		"show": false,
-        "toolbar": false,
+        "toolbar": true,
         "frame": false,
         "transparent": true,
         "resizable":true,
