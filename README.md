@@ -3,19 +3,19 @@
 ## WHATS NEW ?
 * sound worked for haru (only tested on first model of this app)
 * context menu (exit button added)
-
+* preserve window state and position
+read usage below
 
 --------------------------------------------------------------------------------------------
 a little cross-platform desktop widget based on the Live2D Sample App in the SDK
 
 [nw.js](https://github.com/nwjs/nw.js) builds are avaliable on [http://nwjs.io/](http://nwjs.io/)
-I have tested all 3 platforms on nw.js version 0.12.x
+I (akiroz) have tested all 3 platforms on nw.js version 0.12.x
 
 ![](https://raw.githubusercontent.com/akiroz/Live2D-Widget/master/screenshot.png)
 
 ### Usage:
 * adjust window size in package.json
-* in this version the app will automatically to the bottom right (tested only 1080p)
 * move: look
 * scroll: zoom
 * l-click: touch
@@ -46,5 +46,4 @@ I have tested all 3 platforms on nw.js version 0.12.x
 ### Issues/Todo:
 * transparency in linux doesn't work unless GPU is disabled but WebGL requires GPU
 * transparency in Mac OS will show a visible title string
-* presist window position between sessions
 * automatically scan for models inside assets
