@@ -1,17 +1,15 @@
-## BETTER Live2D-Widget updated 20 march 2016 
-(original from akiroz)
-## WHATS NEW ?
-* sound worked for haru (only tested on first model of this app)
-* context menu (exit button added)
-* preserve window state and position
-
---------------------------------------------------------------------------------------------
+## Live2D-Widget
 a little cross-platform desktop widget based on the Live2D Sample App in the SDK
 
 [nw.js](https://github.com/nwjs/nw.js) builds are avaliable on [http://nwjs.io/](http://nwjs.io/)
-I (akiroz) have tested all 3 platforms on nw.js version 0.12.x
+Tested on all 3 platforms with nw.js version 0.12.x
 
 ![](https://raw.githubusercontent.com/akiroz/Live2D-Widget/master/screenshot.png)
+
+## UPDATE March 20th, 2016
+* sound worked for haru (only tested on first model of this app)
+* context menu (exit button added)
+* preserve window state and position
 
 ### Usage:
 * adjust window size in package.json
@@ -41,6 +39,11 @@ I (akiroz) have tested all 3 platforms on nw.js version 0.12.x
 5. edit `src/LAppDefine.js` (around line 33), define/remove your `*.model.json` path(s)
 6. edit `src/LAppLive2DManager.js` (around line 36), change the modulo to the number of model(s)
 7. edit `src/LAppLive2DManager.js` (around line 40), add/remove cases for your model(s)
+
+### Troubleshooting
+* Gettiing audio to work: 2 possible solutions.
+    * follow this [guide](https://github.com/nwjs/nw.js/wiki/Using-MP3-%26-MP4-%28H.264%29-using-the--video--%26--audio--tags.) to get MP3 in nw.js
+    * convert all audio to Vorbis (ogg/oga)
 
 ### Issues/Todo:
 * transparency in linux doesn't work unless GPU is disabled but WebGL requires GPU
