@@ -1,6 +1,6 @@
 {
     "name": "Live2D",
-    "version": "0.0.1",
+    "version": "0.0.2a",
     "main": "index.html",
     "window": {
         "toolbar": false,
@@ -9,7 +9,7 @@
         "resizable":true,
         "width":490,
         "height":730,
-        "show_in_taskbar": true,
+        "show_in_taskbar": false,
         "always-on-top": false
     }
 }
