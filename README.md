@@ -2,6 +2,7 @@
 a little cross-platform desktop widget based on the Live2D Sample App in the SDK
 
 [nw.js](https://github.com/nwjs/nw.js) builds are avaliable on [http://nwjs.io/](http://nwjs.io/)
+
 Tested on all 3 platforms with nw.js version 0.12.x
 
 ![](https://raw.githubusercontent.com/akiroz/Live2D-Widget/master/screenshot.png)
