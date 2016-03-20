@@ -4,7 +4,6 @@
 * sound worked for haru (only tested on first model of this app)
 * context menu (exit button added)
 * preserve window state and position
-read usage below
 
 --------------------------------------------------------------------------------------------
 a little cross-platform desktop widget based on the Live2D Sample App in the SDK
