@@ -3,6 +3,7 @@
     "version": "0.0.2a",
     "main": "index.html",
     "window": {
+		"show": false,
         "toolbar": false,
         "frame": false,
         "transparent": true,
