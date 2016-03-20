@@ -30,10 +30,8 @@ function sampleApp1()
     
     this.isModelShown = false;
     
-    
     initL2dCanvas("glcanvas");
-    
-    
+    // Create an empty context menu
     init();
 }
 
@@ -54,19 +52,63 @@ function initL2dCanvas(canvasId)
         
         this.canvas.addEventListener("mouseup", mouseEvent, false);
         this.canvas.addEventListener("mouseout", mouseEvent, false);
-        this.canvas.addEventListener("contextmenu", mouseEvent, false);
+        //this.canvas.addEventListener("contextmenu", mouseEvent, false);
         
         
         this.canvas.addEventListener("touchstart", touchEvent, false);
         this.canvas.addEventListener("touchend", touchEvent, false);
         this.canvas.addEventListener("touchmove", touchEvent, false);
-        
+		
+		// Create an empty context menu
+		var nw = require('nw.gui');
+		var menu = new nw.Menu();
+		// Get the current window
+		var win = nw.Window.get();
+		//win.moveTo(window.screen.availWidth / 1.5, window.screen.availWidth / 5);
+
+		// Add some items with label
+		menu.append(new nw.MenuItem({
+		  label: 'Change Model',
+		  click: function(){
+			changeModel();
+		  }
+		}));
+		menu.append(new nw.MenuItem({ 
+		  label: 'Always on Top',
+		  click: function() {
+			win.minimize();
+			if (confirm('Do you want to set this app always on top ?')) {
+				win.setAlwaysOnTop(true);
+			} else {
+				win.setAlwaysOnTop(false);
+			}
+			win.restore();
+		  }
+		}));
+		menu.append(new nw.MenuItem({ type: 'separator' }));
+		menu.append(new nw.MenuItem({ 
+		  label: 'Exit',
+		  click: function() {
+			if (confirm('Are you sure you want to exit?')) {
+				nw.App.closeAllWindows();
+			}
+		  }
+		}));
+		// Hooks the "contextmenu" event
+		this.canvas.addEventListener('contextmenu', function(ev) {
+		  // Prevent showing default context menu
+		  ev.preventDefault();
+		  // Popup the native context menu at place you click
+		  menu.popup(ev.x, ev.y);
+
+		  return false;
+		}, false);
     }
     
-    btnChangeModel = document.getElementById("btnChange");
-    btnChangeModel.addEventListener("click", function(e) {
-        changeModel();
-    });
+    //btnChangeModel = document.getElementById("btnChange");
+    //btnChangeModel.addEventListener("click", function(e) {
+    //    changeModel();
+    //});
 }
 
 
@@ -173,10 +215,10 @@ function draw()
             
             if (!this.isModelShown && i == this.live2DMgr.numModels()-1) {
                 this.isModelShown = !this.isModelShown;
-                var btnChange = document.getElementById("btnChange");
-                btnChange.textContent = "Change Model";
-                btnChange.removeAttribute("disabled");
-                btnChange.setAttribute("class", "active");
+                //var btnChange = document.getElementById("btnChange");
+                //btnChange.textContent = "Change Model";
+                //btnChange.removeAttribute("disabled");
+                //btnChange.setAttribute("class", "active");
             }
         }
     }
@@ -187,10 +229,10 @@ function draw()
 
 function changeModel()
 {
-    var btnChange = document.getElementById("btnChange");
-    btnChange.setAttribute("disabled","disabled");
-    btnChange.setAttribute("class", "inactive");
-    btnChange.textContent = "Now Loading...";
+    //var btnChange = document.getElementById("btnChange");
+    //btnChange.setAttribute("disabled","disabled");
+    //btnChange.setAttribute("class", "inactive");
+    //btnChange.textContent = "Now Loading...";
     this.isModelShown = false;
     
     this.live2DMgr.reloadFlg = true;
@@ -198,9 +240,6 @@ function changeModel()
 
     this.live2DMgr.changeModel(this.gl);
 }
-
-
-
 
 function modelScaling(scale)
 {   
@@ -312,9 +351,6 @@ function mouseEvent(e)
     } else if (e.type == "mouseout") {
     	if (thisRef.drag) thisRef.drag = false;
         lookFront();
-    } else if (e.type == "contextmenu") {
-        
-        changeModel();
     }
 
 }
